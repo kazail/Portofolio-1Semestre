@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang=en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-sacele=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- serve para normalizar css entre diferentes browsers -->
+
+
+
+<!--Font Awesome Icons Free -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<title>Goncalo</title>
+
+
+<!-- meus ficheiro/s css -->
+
+<link rel="stylesheet" href="css/GeralStyles.css"> 
+<link rel="stylesheet" href="css/Header.css">
+<link rel="stylesheet" href="css/Intro.css">
+<!--<link rel="stylesheet" href="css/NavBar.css"> -->
+
+<link href="css/NavBar.css" media="(max-width: 650px)" rel="stylesheet"  type="text/css" />
+<link href="css/Navbars.css" media="(min-width: 650px)" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/MyServices.css">
+<link rel="stylesheet" href="css/MyWork.css">
+<link rel="stylesheet" href="css/AboutMe.css">
+<link rel="stylesheet" href="css/Footer.css">
+
+
+
+<!-- -->
+<link rel="stylesheet" href="Gallery.css"> 
+
+
+
+</head>
+<body>
+
+
+
+
+
+<!-- Header e NavBar-->
+ <!-- Mobile -->
+ 	<header>
+				
+			<button class="nav_toggle" aria-label="toogle navigation">
+				<span class="hamburguer"></span>	
+			</button>
+		
+		
+		<nav class="nav">
+			<ul class="nav_list">
+				<li class="nav_item">
+					<a href="index.html" class="nav_link">Home</a> 
+				</li>
+				
+				<li class="nav_item">
+					<a href="index.html#focus" class="nav_link">Learning</a>
+				</li>
+				
+				<li class="nav_item">
+					<a href="index.html#work" class="nav_link">My works</a>
+				</li>	
+				
+				<li class="nav_item">
+					<a href="index.html#aboutme" class="nav_link">About Me</a> 
+				</li>
+				
+									
+			</ul>
+		</nav>		
+	</header>
+
+	
+	
+	
+	
+	<!-- Notas:
+	Cada elemento tera a sua class, mas havera elementos que se repetem e poderão ter so minimas diferenças
+	para esses temos 2 classes, a geral a todos identicos e uma mais especifica
+	ex:class="section_title section_title_intro" 
+	-->	
+
+	
+	
+		<!-- introduction -->		<!-- introduction -->		<!-- introduction -->			<!-- introduction -->     	<!-- introduction -->
+		<!-- id sera para fazer uma anchor aqui -->
+	<section class="intro" id="home">
+		<h1 class="section_title section_title_intro"> Hello, my name is <strong> Goncalo Ferreira </strong></h1>
+		
+		
+		<p class="section_subtitle section_subtitle_intro">Student Of GameDev</p>
+		
+		
+		<img src="img/myface.jpg" alt="imgError" class="intro_img">	
+		
+		
+		
+				<a  class="email" href="mailto:asdasd@live.com" class="footer_link">goncaloferreira@gmail.com</a>	
+			
+			
+	</section>
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	
+<!-- My Services--><!-- My Services--><!-- My Services--><!-- My Services--><!-- My Services--><!-- My Services--><!-- My Services-->
+	<section class="my_services" id="focus">
+		<h2 class="section_title section_title_services">Learning Focus</h2>
+			<div class="services">
+				<div class="service">
+				
+					<h3>Programmer Skills</h3>
+					<p>Developing in Unity using C#</p>
+					<img class="service_img" src="img/work.jpg" alt="img error">
+				</div><!-- /fim servico -->
+				
+				<div class="service">
+					<h3>3D Modelling</h3>
+					<p>3dsMax</p>
+					<img class="service_img" src="img/3D/avioneta3D.jpg" alt="img error">
+				</div><!-- /fim servico -->
+				
+				<div class="service">
+					<h3>Etc</h3>
+					<p>etcetcetc</p>
+					<img class="service_img" src="img/work.jpg" alt="img error">
+				</div><!-- /fim servico -->
+				
+		</div>
+		
+		
+		
+		
+		
+			<a href="#work" class="btnx" >Works </a><!-- butao -->			
+			
+	</section>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ <!--- my work --><!--- my work --><!--- my work --><!--- my work --><!--- my work --><!--- my work -->	
+	<section class="my_work" id="work">
+		<h2 class="section_title section_title_work">My work </h2>
+		<p class="section_subtitle section_subtitle_work">A selection of my works</p>
+		
+		<!-- engraçado +para o titulo  word-break: break-all;-->	
+		
+		
+			
+		<div class="portofolio"><!-- Portfolio Gallery Grid -->	
+				<!-- Butoes de selecao de tipo de imagens a ver -->
+								<div id="myBtnContainer">
+									<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+									<button class="btn" onclick="filterSelection('3D')"> 3D</button>
+									<button class="btn" onclick="filterSelection('Programmer')"> Programmer</button>
+									<button class="btn" onclick="filterSelection('Others')"> Others</button>
+								</div>
+						
+				<div class="row">	
+						<!-- Inicio 3D -->				
+						  <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/Xadrez.png" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">Xadrez</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						  
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/caricas.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">caricas</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/torneira.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">torneira</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/abrelatas.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">abrelatas</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/baldeLixo.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">baldeLixo</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/bancorustico.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">bancorustico</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/cadeado.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">cadeado</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/sofa.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">sofa</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/illuminacao.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">Mountains</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						    <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/fones.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">Fones</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						   <div class="column 3D">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/3D/apoiosec.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">Base Cadeira</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						  
+						  <!-- Fim 3D -->
+						  
+						  <div class="column Programmer">
+							<div class="content">
+							 <a href="#" class="column_item">
+								<img class="gal_img"  src="img/work.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">Lights</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+						  
+						  <div class="column Others">
+							<div class="content">
+							  <a href="#" class="column_item">
+								<img class="gal_img"  src="img/work.jpg" alt="img error" style="width:100%">
+							  </a>
+							  <h4 class="text_dark">Forest</h4>
+							  <p class="text_dark">Lorem ipsum dolor..</p>
+							</div>
+						  </div>
+				</div>
+		</div><!-- END GRID -->		
+	</section>
+ 
+
+ 
+ 
+ 
+ 
+ 
+  
+ 
+	<!-- About me --><!-- About me --><!-- About me --><!-- About me --><!-- About me --><!-- About me --><!-- About me --><!-- About me -->
+	<section class="about_me" id="aboutme">
+			<!--se tivemros mais que uma seccao <header>-->
+			<h2 class="section_title section_title_about"> Who i am</h2>
+			<p class="section_subtitle section_subtitle_about"> Im who i'm cause they say what i'm</p>
+			<!--se tivemros mais que uma seccao </header>-->
+			
+			
+			<div class="about_me_body">
+				<p>Hello all, my name is goncalo ferreira, im learning at ULP, Porto.<br>
+				
+			I'm 28 years old and....<br>
+			....
+			....
+			..</p>
+			</div>
+			
+			<img src="img/myface.jpg" alt="img error" class="about_me_img"><!--<img src="img/myface.jpg" alt="img error>-->
+		
+	</section>	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- Roda pé -->
+<footer class="footer_inline">
+
+		
+		
+		<!-- fazr ou arranjar svgs de icons das redes sociais -->
+		<ul class="social_list">
+				
+		
+			<li class="social_list_item">
+				<a href="#" class="fa fa-facebook"></a>
+			</li>
+			<li class="social_list_item">
+				<a href="#" class="fa fa-twitter"></a>
+			</li>
+			<li class="social_list_item">
+				<a href="#" class="fa fa-linkedin"></a>
+			</li>
+			
+			<li class="social_list_item">
+				<a href="#" class="fa fa-youtube"></a>
+			</li>
+			
+			<li class="social_list_item">
+				<a href="#" class="fa fa-instagram"></a>
+			</li>
+			<!-- antes: <li class="social_list_item"> <a class="social_list_link" href="https://facebook.com"> <img class="social_list_img" src="img/leaf.png" alt="icon"> </a> </li>-->
+		</ul>
+		
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- Scripts-->
+<!--Script botao -->
+	<script src="js/butao.js"></script>
+	<script src="js/butoesGaleria.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+
+
+/*My Services*/
+/*Testar tamanhos diferentes de imagens*/
+/*Corrigir Butão e copiar estilo para My Work*/
+/*Feito falta footer */
+
+
+
+
+
+
+.btnx{
+	display:inline-block	;
+	padding: 12px 16px;/*tamanho butao*/
+	background: var(--clr-accent);
+	color: var(--clr-dark);
+	text-decoration: none;
+	cursor: pointer;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: var(--fw-bold);
+	transition: transform 200ms ease-in-out;
+}
+
+.btnx:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service_img{
+	box-shadow: var(--bs);
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 1em;
+	
+	/*tamanho imagens e obrigar a que fiquem na escala pertendida*/
+	/*igual na galeria mas menor tamanho em imagens*/
+	width:300px;
+height: 300px;
+object-fit:scale-down;
+	
+	
+	
+	
+}
+
+.my_services{
+	background: var(--clr-dark);
+	background-image: url(../img/myimg.jpg);/*se por algum motivo a imagem nao carregar ainda conseguem ler o texto*/
+	background-size: cover;
+	background-blend-mode: multiply;/*torna a cor de imagem um pouco mais escura, testar conforme melhor resultado*/
+	color: var(--clr-light);
+	text-align: center;
+	
+}
+
+.section_title_services{
+	color: var(--clr-accent);
+	position: relative;
+	
+}
+
+
+/*linha a seguir ao titulo*/
+.section_title_services::after{
+	content: '';/*tem de ter contem ou nao aparece!, pro ser pseudo element ::*/
+	display: block;
+	width: 2em;/*25%*/
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background: var(--clr-light);/* ou background:currentColor; se quisermos que seja igual a cor ja defenida nesta seccao*/
+	opacity: 0.25;
+	
+}
+
+.services{
+	margin-bottom: 2em;/*espaço enntre divs e butao*/
+}
+.service{
+	max-width: 500px;/*tamanho dos divs*/
+	margin: 0 auto;/*margim auto com as laterais para centrar*/
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+@media (max-width: 800px){
+	.about_me_body{
+	/*	background:blue;*/
+		margin: auto;
+	}
+
+	
+}
+
+
+
+@media (min-width: 1000px){
+	
+	.service_img{	
+		width:300px;
+		height: 300px;
+		/*object-fit:scale-down;*/
+	
+	}
+	.services{	
+		display:flex; /*deve dar logo 3 columns*/
+		max-width: 1000px;/*talvez 100%?*/
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	
+	
+	/*se tivermos um servico a seguir a um servico damos uma margem entre eles, o primeiro n tem margin left e no ultimo termina!  */
+	.services + .service{
+		margin-left: 2em;
+	}
+}

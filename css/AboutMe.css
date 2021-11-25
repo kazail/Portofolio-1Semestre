@@ -1,0 +1,62 @@
+/*ABOUT ME SECTION*/
+
+.about_me{
+	background: var(--clr-dark);
+	max-width:auto;
+	margin: 1em 0 0 0;/* talvez aqui nao queira margin bottom por causa do footer   1em 0 0 0  */
+
+}
+
+.about_me_img{
+	box-shadow: var(--bs);
+	margin:auto;
+	
+	
+	width:160px;
+height: 260px;
+object-fit:scale-down;
+
+}
+
+.about_me_body{
+	
+	
+}
+
+
+@media (min-width: 500px){
+	.about_me{
+		
+		display:grid;
+		grid-template-columns: 1fr 200px;
+		grid-template-areas:
+		"title img"
+		"subtitle img"
+		"text img";
+		
+		grid-column-gap: 2em; /*espaço*/
+	}	
+	
+	.about_me_img{
+		grid-area: img;/**/
+		position: relative;/**/
+		z-index: 2; /*colocar em cima*/
+		margin-top: 0;
+		
+	}
+	.section_title_about{
+		grid-area: title;	
+	}
+	
+	.section_subtitle_about{
+		grid-column: 1 / -1;/*de um lado ao outro*/
+		grid-row: 2; 
+		position: relative; /*text correction colocar em cima igual*/
+		left: -1em: /**/
+		width: calc(100% + 2em);/**/
+		padding-left: 1em;/**/
+		padding-right: calc(200px + 4em); /*evitar que o texto to que na imagem*//**/
+	}
+}
+	
+	

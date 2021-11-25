@@ -1,0 +1,145 @@
+/*NavBar e button Style Mobile*/
+
+												/*1º Mobile*/
+
+.nav{
+	position: fixed;
+	background: var(--clr-dark);
+	color: var(--clr-light);
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	z-index: 100; /*garantir que esta sempre a frente*/
+	
+	transform: translateX(100%);/*100& desparece 0% ocupa ecra todo*/
+	transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+	
+}
+
+.nav_list{
+	list-style: none;
+	display:flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-evenly;/*separaos pelo espaco vertical*/
+	align-items: center;/*centraliza*/
+	margin: 0;
+	padding: 0;
+	
+	
+}
+
+.nav_link{
+	color: inherit;/*herda a cor*/
+	font-weight: var(--fw-bold);
+	font-size: var(--fs-h3);/*tamanho letra*/
+	text-decoration:none;
+	
+}
+
+.nav_link:hover{
+	color:var(--clr-accent);
+	
+}
+	
+.nav_toggle{
+	padding: .5em;/*area maior para click*/
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	z-index: 1000;/*garantir que o botao esta a frente da navbar!!!!*/
+}
+
+
+.nav_open .nav{
+	transform: translateX(0);/*muda estado*/
+	
+}
+
+.nav_open .nav_toggle{
+	position:fixed;
+	
+}
+
+.nav_open .hamburguer{
+	transform: rotate(.625turn);
+	
+}
+
+.nav_open .hamburguer::before{
+	transform: rotate(90deg) translateX(-6px);
+}
+
+.nav_open .hamburguer::after{
+	opacity: 0;
+}
+
+
+
+
+
+/*Hamburguer Button Mobile*/
+
+.hamburguer{		
+	display: block;
+	position: relative;
+}
+
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after{
+	background: var(--clr-accent);
+	width: 2em;
+	height: 3px; /* a trabalhar com: .hamburguer::before{top: 6px}.hamburguer::after{bottom: 6px} */	
+	border-radius: 1em;
+	transition:
+		transform 250ms ease-in-out;
+		
+}
+
+/*using pseudo elements*/
+.hamburguer::before,
+.hamburguer::after{
+	content: ''; /*necessario ou n funciona*/
+	position:absolute;
+	left:0;
+	right: 0;
+	
+	
+}
+
+.hamburguer::before{top: 6px}
+.hamburguer::after{bottom: 6px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+							/*DESKTOP*/
+
+@media (min-width: 600px){
+	.hamburguer{
+	/*	display: none;*/ /*no quero que o hamburguer seja visivel*/
+		
+	}
+	/*Mas quero continuar a poder ver o menu:*/
+	
+	
+	
+
+	
+	
+	
+}

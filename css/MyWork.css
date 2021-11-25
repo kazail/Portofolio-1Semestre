@@ -1,0 +1,143 @@
+.my_work{
+	background: var(--clr-light);
+	/*color: var(--clr-light);*/
+	color: var(--clr-dark);
+	text-align: center;/*este text align ta a dar cagada aqui*/
+	margin: 1em 0 1em 0;
+	
+	padding: 0;
+}
+
+.text_dark{
+	color:var(--clr-light);
+}
+
+.gal_img{
+	/*tamanho imagens e obrigar a que fiquem na escala pertendida*/
+width:200px;
+height: 200px;
+object-fit:scale-down;
+}
+
+.portofolio{
+	/* box-sizing: border-box;*/
+	 max-width: auto;/*Largura da Galeria*/
+	 margin: auto;
+	 
+}
+
+
+
+/**/
+.column_item{
+	background: var(--clr-accent);
+	overflow: hidden;/*imagem amplia dentro da caixa, sem isto amplia para fora/ ver o que acho mais engraçado conforme*/
+	
+}
+
+.column_item:focus{/*retirar o efeito de tab e muda-lo para um identico*/
+	position:relative;/*retirar o efeito de tab e muda-lo para um identico*/
+	z-index: 2;/*retirar o efeito de tab e muda-lo para um identico*/
+}
+
+
+.portofolio_img:hover,
+.column_item:focus .portofolio_img			/*retirar o efeito de tab e muda-lo para um identico*/
+{
+	transform: scale(1.2);
+	opacity: .5;
+}
+
+
+/*pORTOFOLIO ITEM INDIVIDUAL*/
+.portofolio_item_individual{
+	padding: 0 2em 2em;
+	max-width: 1000px;
+	margin: 0 auto;
+ 
+}
+.portofolio_item_individual p{
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/**/
+
+
+
+
+
+
+.row {
+  margin: 8px -16px;
+ 
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+  
+  
+  
+  border-style: none ; /*dashed   ridge    */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: var(--clr-dark);
+  
+  border:white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+
+
+
+
+
+/*USAR ESTILO ANTERIOR!!!!!!!!!!*/
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: var(--clr-accent);
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: var(--clr-light);
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: var(--clr-dark);
+   color: white;
+}

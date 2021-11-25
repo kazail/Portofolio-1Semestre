@@ -1,0 +1,26 @@
+
+header{
+	display:flex; /*MOBILE block/ FLEX!!!!!!!!!!!!!!!!!!!!!!!!*/
+	justify-content: space-around;/*MOBILE SPACE-BETWEEN*/
+	padding: 1.5em;
+	background: var(--clr-dark);
+	padding: 0;
+	
+}
+		
+.logo{
+	max-width: 30px; /*modificar para controlar o tamanho do logo especialmente se for SVG*/
+}
+
+
+/*Tornar Desktop ou mobile?como quero?*/
+@media (max-width: 650px){
+	
+	header{
+		display:block;
+		justify-content:  space-between;
+		background: var(--clr-dark);
+		padding: 30px;
+	}
+	
+}
